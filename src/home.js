@@ -23,8 +23,6 @@ async function init() {
         let table = document.getElementById("tableBody");
         table.innerHTML = "";
 
-        sleep(500);
-
 
         // Variable to keep track of the currently expanded details row
         let expandedRow = null;
@@ -156,6 +154,3 @@ async function cercaViaggi(stazionePartenza, stazioneArrivo) {
 
 }
 
-function sleep(ms) {
-    return new Promise(resolve => setTimeout(resolve, ms));
-}
