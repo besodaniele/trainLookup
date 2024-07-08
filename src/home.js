@@ -1,5 +1,5 @@
-const URIGET = "https://www.lefrecce.it/Channels.Website.BFF.WEB/website/locations";
-const URIPOST = "https://www.lefrecce.it/Channels.Website.BFF.WEB/website/ticket/solutions";
+const URIGET = "https://cors-anywhere.herokuapp.com/https://www.lefrecce.it/Channels.Website.BFF.WEB/website/locations";
+const URIPOST = "https://cors-anywhere.herokuapp.com/https://www.lefrecce.it/Channels.Website.BFF.WEB/website/ticket/solutions";
 window.onload = init();
 
 
@@ -93,6 +93,7 @@ async function init() {
 async function suggerimenti(nomeStazione) {
     //query esempio
     let response = await fetch((URIGET + "/search?name=" + nomeStazione.value + "&limit=10"), {
+
         method: "Get",
         headers: {
             "Accept": "application/json",
