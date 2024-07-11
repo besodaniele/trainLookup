@@ -1,5 +1,5 @@
-const URIGET = "https://cors-anywhere.herokuapp.com/https://www.lefrecce.it/Channels.Website.BFF.WEB/website/locations";
-const URIPOST = "https://cors-anywhere.herokuapp.com/https://www.lefrecce.it/Channels.Website.BFF.WEB/website/ticket/solutions";
+const URIGET = "https://www.lefrecce.it/Channels.Website.BFF.WEB/website/locations";
+const URIPOST = "https://www.lefrecce.it/Channels.Website.BFF.WEB/website/ticket/solutions";
 window.onload = init();
 
 
@@ -60,9 +60,12 @@ async function init() {
 
             // Iterate over nodes and add details to detailsContent
             for (let node of sol["nodes"]) {
+                if (node["train"]["description"] == null) {
+                    node["train"]["description"] = "";
+                }
                 detailsContent += `
                     <li>
-                        <span>${node["origin"]} (${node["departureTime"].match(/\d\d:\d\d/)[0]})</span> 
+                        <span id="trainName">${node["train"]["acronym"]} ${node["train"]["description"]}  </span><span>${node["origin"]} (${node["departureTime"].match(/\d\d:\d\d/)[0]})   </span> 
                         <span>&rarr;</span> 
                         <span>${node["destination"]} (${node["arrivalTime"].match(/\d\d:\d\d/)[0]})</span>
                     </li>

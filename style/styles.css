@@ -9,6 +9,7 @@ body {
     font-family: Arial, sans-serif;
     background-color: #f8f9fa;
     padding: 20px;
+    font-size: 16px; /* Base font size for better scalability */
 }
 
 /* Header styling */
@@ -16,11 +17,12 @@ h1 {
     text-align: center;
     color: #343a40;
     margin-bottom: 20px;
+    font-size: 2.5rem; /* Adjusted for better readability */
 }
 
 /* Form container styling */
 form {
-    max-width: 600px;
+    max-width: 600px; /* Limited width for desktop */
     margin: 0 auto;
     padding: 20px;
     background-color: #fff;
@@ -34,28 +36,30 @@ label {
     margin-bottom: 8px;
     font-weight: bold;
     color: #495057;
+    font-size: 1.2rem; /* Adjusted for better readability */
 }
 
 /* Input field styling */
 input[type="text"] {
     width: 100%;
-    padding: 10px;
+    padding: 12px; /* Adjusted for better readability */
     margin-bottom: 20px;
     border: 1px solid #ced4da;
     border-radius: 4px;
+    font-size: 1.2rem; /* Adjusted for better readability */
 }
 
 /* Submit button styling */
 input[type="submit"] {
     display: block;
     width: 100%;
-    padding: 10px;
+    padding: 12px; /* Adjusted for better readability */
     background-color: #007bff;
     color: #fff;
     border: none;
     border-radius: 4px;
     cursor: pointer;
-    font-size: 16px;
+    font-size: 1.4rem; /* Adjusted for better readability */
 }
 
 /* Submit button hover effect */
@@ -66,32 +70,36 @@ input[type="submit"]:hover {
 /* General table styling */
 table {
     width: 100%;
+    max-width: 1000px; /* Increased max-width for desktop */
     margin: 20px auto;
     border-collapse: collapse;
     font-family: Arial, sans-serif;
+    font-size: 1.2rem; /* Adjusted for better readability */
 }
 
-/* Header styling */
+/* Table header styling */
 th {
     background-color: #4CAF50;
     color: white;
-    padding: 10px;
+    padding: 12px; /* Adjusted for better readability */
     text-align: left;
+    font-size: 1.2rem; /* Adjusted for better readability */
 }
 
-/* Cell styling */
+/* Table cell styling */
 td {
-    padding: 10px;
+    padding: 12px; /* Adjusted for better readability */
     border: 1px solid #ddd;
     text-align: left;
+    font-size: 1.1rem; /* Adjusted for better readability */
 }
 
-/* Row styling */
+/* Table row styling */
 tr:nth-child(even) {
     background-color: #f2f2f2;
 }
 
-/* Hover effect for rows */
+/* Table row hover effect */
 tr:hover {
     background-color: #ddd;
 }
@@ -109,6 +117,7 @@ tr:hover {
 .details-container {
     padding: 10px;
     background-color: #f0f0f0;
+    font-size: 1.1rem; /* Adjusted for better readability */
 }
 
 .details-list {
@@ -119,4 +128,119 @@ tr:hover {
 
 .details-item {
     margin-right: 10px;
+    font-size: 1.1rem; /* Adjusted for better readability */
+}
+
+#trainName {
+    font-weight: bold;
+    color: #0056b3;
+    font-size: 1.3rem; /* Adjusted for better readability */
+    margin-right: 5px;
+}
+
+/* Responsive styling */
+
+/* Tablet and smaller devices */
+@media (max-width: 768px) {
+    body {
+        padding: 10px;
+    }
+
+    h1 {
+        font-size: 2rem; /* Adjusted for readability */
+    }
+
+    form {
+        padding: 15px;
+    }
+
+    label {
+        font-size: 1.1rem; /* Adjusted for readability */
+    }
+
+    input[type="text"], input[type="submit"] {
+        padding: 10px;
+        font-size: 1.1rem; /* Adjusted for readability */
+    }
+
+    th, td {
+        padding: 10px;
+        font-size: 1.2rem; /* Adjusted for readability */
+    }
+
+    table {
+        font-size: 1.2rem; /* Adjusted for readability */
+    }
+
+    .details-container, .details-item {
+        font-size: 1.1rem; /* Adjusted for readability */
+    }
+}
+
+/* Mobile devices */
+@media (max-width: 480px) {
+    h1 {
+        font-size: 1.8rem; /* Adjusted for readability */
+        margin-bottom: 15px;
+    }
+
+    form {
+        padding: 10px;
+    }
+
+    label {
+        font-size: 1rem; /* Adjusted for readability */
+    }
+
+    input[type="text"], input[type="submit"] {
+        padding: 10px;
+        font-size: 1rem; /* Adjusted for readability */
+    }
+
+    th, td {
+        padding: 8px;
+        font-size: 1rem; /* Adjusted for readability */
+    }
+
+    table {
+        font-size: 1rem; /* Adjusted for readability */
+    }
+
+    .details-container, .details-item {
+        font-size: 1rem; /* Adjusted for readability */
+    }
+}
+
+/* Extra small devices */
+@media (max-width: 360px) {
+    h1 {
+        font-size: 1.5rem; /* Adjusted for readability */
+        margin-bottom: 10px;
+    }
+
+    form {
+        padding: 5px;
+    }
+
+    label {
+        font-size: 0.9rem; /* Adjusted for readability */
+    }
+
+    input[type="text"], input[type="submit"] {
+        padding: 8px;
+        font-size: 0.9rem; /* Adjusted for readability */
+    }
+
+    th, td {
+        padding: 8px;
+        font-size: 0.9rem; /* Adjusted for readability */
+    }
+
+    table {
+        font-size: 0.9rem; /* Adjusted for readability */
+    }
+
+    .details-container, .details-item {
+        font-size: 0.9rem; /* Adjusted for readability */
+    }
 }
